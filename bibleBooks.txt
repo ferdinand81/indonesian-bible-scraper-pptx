@@ -1,0 +1,13 @@
+    bookList = ['kejadian', 'keluaran', 'imamat', 'bilangan', 'ulangan',
+                'yosua', 'hakim-hakim', 'rut', '1samuel', '2samuel',
+                '1raja-raja', '2raja-raja', '1tawarikh', '2tawarikh',
+                'ezra', 'nehemia', 'ester', 'ayub', 'mazmur', 'amsal',
+                'pengkhotbah', 'kidungagung', 'yesaya', 'yeremia', 'ratapan',
+                'yehezkiel', 'daniel', 'hosea', 'yoel', 'amos', 'obaja',
+                'yunus', 'mikha', 'nahum', 'habakuk', 'zefanya', 'hagai',
+                'zakharia', 'maleakhi', 'matius', 'markus', 'lukas', 'yohanes',
+                'kisahpararasul', 'roma', '1korintus', '2korintus',
+                'galatia', 'efesus', 'filipi', 'kolose', '1tesalonika',
+                '2tesalonika', '1timotius', '2timotius', 'titus', 'filemon',
+                'ibrani', 'yakobus', '1petrus', '2petrus', '1yohanes',
+                '2yohanes', '3yohanes', 'yudas', 'wahyu']
