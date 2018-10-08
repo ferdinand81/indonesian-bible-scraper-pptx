@@ -1,5 +1,5 @@
 # Must have Python 3 installed.
-# Close the PowerPoint file if it is opened. 
+# IMPORTANT: Close the PowerPoint file if it is opened. 
 # Enter the bible verses in this format: 
 # [Name of book from bibleBooks.txt] <space> [Chapter #] <space> [Verse Range]
 # Verse range can be like "1", or "1-3", or "1-", or "-5", or "*" (not in quotes, of course)

@@ -3,9 +3,10 @@
 # Scrapes the site below to get Terjemahan Baru Indonesian Bible verses
 # Compiles everything into a PowerPoint with each entry as a separate slide
 # http://www.bibledbdata.org/onlinebibles/indonesian_tb/01_001.htm
-import requests, bs4
+
+import requests, bs4, time
 from pptx import Presentation
-import time
+# from pptx.enum.text import MSO_AUTO_SIZE
 # from pptx.util import Inches, Pt
 
 
@@ -130,7 +131,18 @@ with open('input.txt') as fp:
                 title_shape.text = content.split('\n')[0]  # print title
 
                 tf = body_shape.text_frame
-                tf.text = '\n'.join(content.split('\n')[1:])  # print verses
+                allVerses = '\n'.join(content.split('\n')[1:])
+                allVersesList = allVerses.split('\n')
+
+                tf.text = allVersesList[0]  # add first verse bullet
+
+                for i in range(1, len(allVersesList)):  # add verse bullets
+                    p = tf.add_paragraph()
+                    p.text = allVersesList[i]
+
+                tf.fit_text(font_family='Calibri', max_size=32, bold=False,
+                            italic=False, font_file=None)
+                # tf.auto_size = MSO_AUTO_SIZE.TEXT_TO_FIT_SHAPE
 
                 line = fp.readline()
 
